@@ -1,0 +1,125 @@
+🟢 Exercise 1 — Hello Word (Absolute Beginner)
+Goal: Create a Word document with a single line of text.
+
+Tasks:
+Install python-docx
+Create a .docx file
+Add a paragraph saying:
+“Hello, this document was created using Python!”
+Save the file as hello.docx
+
+Concepts learned:
+Installing libraries
+Creating a document
+Saving a file
+
+🟢 Exercise 2 — Multiple Paragraphs & Text Formatting
+Goal: Add multiple paragraphs with basic formatting.
+
+Tasks:
+Create a document
+
+Add:
+A title paragraph
+A normal paragraph
+A paragraph with bold, italic, and underlined text
+Save as formatted_text.docx
+
+Concepts learned:
+Paragraphs vs runs
+Text styling (bold, italic, underline)
+
+🟡 Exercise 3 — Headings & Structure
+Goal: Structure a document using headings.
+Tasks:
+
+Add:
+Heading level 1: Python-docx Tutorial
+Heading level 2: Introduction
+A paragraph explaining what python-docx is
+Heading level 2: Features
+Under “Features”, add a paragraph listing:
+Create documents
+Edit text
+Add tables
+
+Concepts learned:
+
+Headings
+Document structure
+
+🟡 Exercise 4 — Lists (Bullet & Numbered)
+Goal: Create bullet and numbered lists.
+
+Tasks:
+Add a heading: Shopping List
+Add a bullet list:
+Rice
+Milk
+Eggs
+Add a heading: Daily Routine
+Add a numbered list:
+Wake up
+Code
+Sleep
+
+Concepts learned:
+List styles
+Paragraph styles
+
+🟠 Exercise 5 — Tables (Core Fundamental)
+Goal: Create and populate a table.
+
+Tasks:
+Create a table with 3 rows and 3 columns
+First row = header:
+Name | Age | Country
+Add at least 2 data rows
+Save as table_example.docx
+
+Concepts learned:
+Creating tables
+Accessing rows and cells
+
+🟠 Exercise 6 — Reading Data & Writing to Word
+Goal: Use Python data structures with Word.
+
+Tasks:
+Create a Python list:
+students = [
+    ("Joshua", 21, "Philippines"),
+    ("Ana", 22, "Japan"),
+    ("Mark", 20, "USA")
+]
+Generate a Word table dynamically from this list
+Add a heading: Student Information
+Concepts learned:
+Loops
+Automating document generation
+Real-world usage
+
+🔵 Exercise 7 — Mini Project (Fundamentals Challenge)
+Goal: Generate a simple report.
+
+Tasks:
+Create a document called weekly_report.docx
+
+Include:
+Title (Heading 0): Weekly Progress Report
+Date (today’s date)
+
+Section: Tasks Completed (bullet list)
+Section: Hours Spent (table)
+Section: Notes (paragraph)
+Use bold section titles
+
+Concepts learned:
+Combining all fundamentals
+Report automation
+Clean document layout
+
+✅ What You’ll Master After These
+By completing these exercises, you’ll understand:
+How Word documents work programmatically
+Paragraphs, runs, headings, lists, and tables
+Automating reports (very useful for GIS, research, or hardware logs 👀)
