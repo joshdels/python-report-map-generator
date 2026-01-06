@@ -17,5 +17,14 @@ which python3
 
 For project dependecies
 ```
+pip -m venv .venv
 pip install -r requirements.txt
+source .venv/scripts/activate
+```
+
+For Dummy Backend Fast API for testing auth and rest api 
+```
+cd fast-api-backend 
+uvicorn dummy_auth_api:app --reload
+python test-api.py
 ```
