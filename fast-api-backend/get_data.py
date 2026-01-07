@@ -1,4 +1,5 @@
 import requests
+import json  # for pretty printing
 
 BASE_URL = "http://127.0.0.1:8000"
 
@@ -40,34 +41,10 @@ print("✅ GeoJSON fetched")
 print("Feature count:", len(geojson["features"]))
 
 # --------------------------------------------------
-# 4️⃣ Upload GeoJSON back to API
+# 4️⃣ Print full features nicely
 # --------------------------------------------------
-upload_geojson_resp = requests.post(
-    f"{BASE_URL}/upload/geojson",
-    headers=headers,
-    json=geojson
-)
-
-upload_geojson_resp.raise_for_status()
-print("✅ GeoJSON upload response:")
-print(upload_geojson_resp.json())
-
-# --------------------------------------------------
-# 5️⃣ (Optional) Upload raw coordinates instead
-# --------------------------------------------------
-coords_payload = {
-    "points": [
-        {"lat": 10.3, "lng": 125.8, "name": "Uploaded A"},
-        {"lat": 10.4, "lng": 125.9, "name": "Uploaded B"}
-    ]
-}
-
-upload_coords_resp = requests.post(
-    f"{BASE_URL}/upload/coordinates",
-    headers=headers,
-    json=coords_payload
-)
-
-upload_coords_resp.raise_for_status()
-print("✅ Coordinates upload response:")
-print(upload_coords_resp.json())
+print("\n--- Features ---")
+for i, feature in enumerate(geojson["features"], start=1):
+    geom = feature.get("geometry")
+    props = feature.get("properties")
+    print(f"{i}: Geometry: {geom}, Properties: {props}")
