@@ -3,28 +3,30 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("This is Joshua! Uraaah")
+        self.setWindowTitle("Uraaah")
 
-        self.button = QPushButton("Press")
+        self.button = QPushButton("Press True")
         self.button.setCheckable(True)
-        self.button.clicked.connect(self.click_button)
         self.button.clicked.connect(self.toggle_button)
 
         self.setCentralWidget(self.button)
 
-    def click_button(self):
-        self.button.setText("Disabled")
-        self.button.setEnabled(True)
-        print("Clicked!")
-
     def toggle_button(self, checked):
-        self.button_checked = checked
+        """State True or false and changes the button UI"""
+        if checked:
+            self.button.setText("Press False")
+            print("State is TRUE")
+        else:
+            self.button.setText("Press True")
+            print("State is FALSE")
 
-        print("Check the label mommy", checked)
+    print("Check state", checked)
+
 
 app = QApplication(sys.argv)
 
