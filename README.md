@@ -8,7 +8,6 @@ https://docxtpl.readthedocs.io/en/latest/
 for pyqt5 gui refer to this 
 https://www.pythonguis.com/tutorials/creating-your-first-pyqt-window/
 
-
 for fast-api studies
 https://fastapi.tiangolo.com/
 
