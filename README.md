@@ -43,3 +43,12 @@ cd fast-api-backend
 uvicorn dummy_auth_api:app --reload
 python test-api.py
 ```
+
+----
+### PyQT Development
+This is for the custom QT application after building it in QTDesign wrap save the layout via *.ui the file using the command
+
+***to generate app py files***
+```
+python3 pyui5 -o app.py layout.ui
+```

@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="icons">
+    <file alias="dog.png">dog.jpeg</file>
+    <file alias="monkey.png">monkey.jpeg</file>
+  </qresource>
+</RCC>
