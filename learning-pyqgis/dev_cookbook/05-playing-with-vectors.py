@@ -6,15 +6,6 @@ from qgis.core import QgsVectorLayer, QgsProject
 num_vector = 0
 for layer in QgsProject.instance().mapLayers().values():
     
-    if isinstance(layer, QgsVectorLayer):
-        print(layer)
-        
-        source = layer.source()
-        provider = layer.providerType()
-        
-        print(layer.source())
-        print(layer.providerType())
-        print(layer.crs())
     
     num_vector += 1
     
